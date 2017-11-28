@@ -1,6 +1,6 @@
 ﻿namespace DrawStar
 {
-    partial class Form1
+    partial class drawStar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.drawButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.whatLabel = new System.Windows.Forms.Label();
             this.xInput = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.xLabel = new System.Windows.Forms.Label();
+            this.yLabel = new System.Windows.Forms.Label();
+            this.sizeLabel = new System.Windows.Forms.Label();
             this.yInput = new System.Windows.Forms.TextBox();
             this.sizeInput = new System.Windows.Forms.TextBox();
             this.redRadio = new System.Windows.Forms.RadioButton();
             this.blueRadio = new System.Windows.Forms.RadioButton();
             this.greenRadio = new System.Windows.Forms.RadioButton();
+            this.otherLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // drawButton
@@ -51,13 +52,13 @@
             this.drawButton.UseVisualStyleBackColor = true;
             this.drawButton.Click += new System.EventHandler(this.drawButton_Click);
             // 
-            // label1
+            // whatLabel
             // 
-            this.label1.Location = new System.Drawing.Point(93, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Input your values and press draw Star to draw the star";
+            this.whatLabel.Location = new System.Drawing.Point(93, 12);
+            this.whatLabel.Name = "whatLabel";
+            this.whatLabel.Size = new System.Drawing.Size(160, 28);
+            this.whatLabel.TabIndex = 1;
+            this.whatLabel.Text = "Input your values and press draw Star to draw the star";
             // 
             // xInput
             // 
@@ -65,33 +66,34 @@
             this.xInput.Name = "xInput";
             this.xInput.Size = new System.Drawing.Size(25, 20);
             this.xInput.TabIndex = 2;
+            this.xInput.Text = "0";
             // 
-            // label2
+            // xLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "X:";
+            this.xLabel.AutoSize = true;
+            this.xLabel.Location = new System.Drawing.Point(20, 44);
+            this.xLabel.Name = "xLabel";
+            this.xLabel.Size = new System.Drawing.Size(17, 13);
+            this.xLabel.TabIndex = 3;
+            this.xLabel.Text = "X:";
             // 
-            // label3
+            // yLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Y:";
+            this.yLabel.AutoSize = true;
+            this.yLabel.Location = new System.Drawing.Point(20, 73);
+            this.yLabel.Name = "yLabel";
+            this.yLabel.Size = new System.Drawing.Size(17, 13);
+            this.yLabel.TabIndex = 4;
+            this.yLabel.Text = "Y:";
             // 
-            // label4
+            // sizeLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Size:";
+            this.sizeLabel.AutoSize = true;
+            this.sizeLabel.Location = new System.Drawing.Point(12, 99);
+            this.sizeLabel.Name = "sizeLabel";
+            this.sizeLabel.Size = new System.Drawing.Size(30, 13);
+            this.sizeLabel.TabIndex = 5;
+            this.sizeLabel.Text = "Size:";
             // 
             // yInput
             // 
@@ -99,6 +101,7 @@
             this.yInput.Name = "yInput";
             this.yInput.Size = new System.Drawing.Size(25, 20);
             this.yInput.TabIndex = 6;
+            this.yInput.Text = "0";
             // 
             // sizeInput
             // 
@@ -106,11 +109,12 @@
             this.sizeInput.Name = "sizeInput";
             this.sizeInput.Size = new System.Drawing.Size(25, 20);
             this.sizeInput.TabIndex = 7;
+            this.sizeInput.Text = "0";
             // 
             // redRadio
             // 
             this.redRadio.AutoSize = true;
-            this.redRadio.Location = new System.Drawing.Point(15, 134);
+            this.redRadio.Location = new System.Drawing.Point(15, 122);
             this.redRadio.Name = "redRadio";
             this.redRadio.Size = new System.Drawing.Size(67, 17);
             this.redRadio.TabIndex = 8;
@@ -121,7 +125,7 @@
             // blueRadio
             // 
             this.blueRadio.AutoSize = true;
-            this.blueRadio.Location = new System.Drawing.Point(15, 157);
+            this.blueRadio.Location = new System.Drawing.Point(15, 145);
             this.blueRadio.Name = "blueRadio";
             this.blueRadio.Size = new System.Drawing.Size(68, 17);
             this.blueRadio.TabIndex = 9;
@@ -132,7 +136,7 @@
             // greenRadio
             // 
             this.greenRadio.AutoSize = true;
-            this.greenRadio.Location = new System.Drawing.Point(15, 180);
+            this.greenRadio.Location = new System.Drawing.Point(15, 168);
             this.greenRadio.Name = "greenRadio";
             this.greenRadio.Size = new System.Drawing.Size(76, 17);
             this.greenRadio.TabIndex = 10;
@@ -140,24 +144,33 @@
             this.greenRadio.Text = "Green Pen";
             this.greenRadio.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // otherLabel
+            // 
+            this.otherLabel.Location = new System.Drawing.Point(15, 192);
+            this.otherLabel.Name = "otherLabel";
+            this.otherLabel.Size = new System.Drawing.Size(76, 37);
+            this.otherLabel.TabIndex = 11;
+            this.otherLabel.Text = "Select None for Black Pen";
+            // 
+            // drawStar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.otherLabel);
             this.Controls.Add(this.greenRadio);
             this.Controls.Add(this.blueRadio);
             this.Controls.Add(this.redRadio);
             this.Controls.Add(this.sizeInput);
             this.Controls.Add(this.yInput);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sizeLabel);
+            this.Controls.Add(this.yLabel);
+            this.Controls.Add(this.xLabel);
             this.Controls.Add(this.xInput);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.whatLabel);
             this.Controls.Add(this.drawButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "drawStar";
+            this.Text = "Draw Star";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,16 +179,17 @@
         #endregion
 
         private System.Windows.Forms.Button drawButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label whatLabel;
         private System.Windows.Forms.TextBox xInput;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label xLabel;
+        private System.Windows.Forms.Label yLabel;
+        private System.Windows.Forms.Label sizeLabel;
         private System.Windows.Forms.TextBox yInput;
         private System.Windows.Forms.TextBox sizeInput;
         private System.Windows.Forms.RadioButton redRadio;
         private System.Windows.Forms.RadioButton blueRadio;
         private System.Windows.Forms.RadioButton greenRadio;
+        private System.Windows.Forms.Label otherLabel;
     }
 }
 
