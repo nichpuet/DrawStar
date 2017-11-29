@@ -36,10 +36,6 @@
             this.sizeLabel = new System.Windows.Forms.Label();
             this.yInput = new System.Windows.Forms.TextBox();
             this.sizeInput = new System.Windows.Forms.TextBox();
-            this.redRadio = new System.Windows.Forms.RadioButton();
-            this.blueRadio = new System.Windows.Forms.RadioButton();
-            this.greenRadio = new System.Windows.Forms.RadioButton();
-            this.otherLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // drawButton
@@ -111,56 +107,11 @@
             this.sizeInput.TabIndex = 7;
             this.sizeInput.Text = "0";
             // 
-            // redRadio
-            // 
-            this.redRadio.AutoSize = true;
-            this.redRadio.Location = new System.Drawing.Point(15, 122);
-            this.redRadio.Name = "redRadio";
-            this.redRadio.Size = new System.Drawing.Size(67, 17);
-            this.redRadio.TabIndex = 8;
-            this.redRadio.TabStop = true;
-            this.redRadio.Text = "Red Pen";
-            this.redRadio.UseVisualStyleBackColor = true;
-            // 
-            // blueRadio
-            // 
-            this.blueRadio.AutoSize = true;
-            this.blueRadio.Location = new System.Drawing.Point(15, 145);
-            this.blueRadio.Name = "blueRadio";
-            this.blueRadio.Size = new System.Drawing.Size(68, 17);
-            this.blueRadio.TabIndex = 9;
-            this.blueRadio.TabStop = true;
-            this.blueRadio.Text = "Blue Pen";
-            this.blueRadio.UseVisualStyleBackColor = true;
-            // 
-            // greenRadio
-            // 
-            this.greenRadio.AutoSize = true;
-            this.greenRadio.Location = new System.Drawing.Point(15, 168);
-            this.greenRadio.Name = "greenRadio";
-            this.greenRadio.Size = new System.Drawing.Size(76, 17);
-            this.greenRadio.TabIndex = 10;
-            this.greenRadio.TabStop = true;
-            this.greenRadio.Text = "Green Pen";
-            this.greenRadio.UseVisualStyleBackColor = true;
-            // 
-            // otherLabel
-            // 
-            this.otherLabel.Location = new System.Drawing.Point(15, 192);
-            this.otherLabel.Name = "otherLabel";
-            this.otherLabel.Size = new System.Drawing.Size(76, 37);
-            this.otherLabel.TabIndex = 11;
-            this.otherLabel.Text = "Select None for Black Pen";
-            // 
             // drawStar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.otherLabel);
-            this.Controls.Add(this.greenRadio);
-            this.Controls.Add(this.blueRadio);
-            this.Controls.Add(this.redRadio);
             this.Controls.Add(this.sizeInput);
             this.Controls.Add(this.yInput);
             this.Controls.Add(this.sizeLabel);
@@ -186,10 +137,6 @@
         private System.Windows.Forms.Label sizeLabel;
         private System.Windows.Forms.TextBox yInput;
         private System.Windows.Forms.TextBox sizeInput;
-        private System.Windows.Forms.RadioButton redRadio;
-        private System.Windows.Forms.RadioButton blueRadio;
-        private System.Windows.Forms.RadioButton greenRadio;
-        private System.Windows.Forms.Label otherLabel;
     }
 }
 
